@@ -1,0 +1,589 @@
+﻿@media screen and (max-width: 1320px) {
+    div.tab_container {
+        clear: left;
+        padding-left: 20px;
+        padding-right: 0;
+    }
+
+    div.tab_container .tab_content {
+        padding: 0px;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1050px) {
+
+.content_login main {
+    max-width: 800px;
+}
+
+.section-guide {
+    padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+
+/*login*/
+
+.auto {
+    max-width: 500px;
+}
+.auto2 {
+    width: 96%;
+}
+
+.login .box,.product .box {
+   padding: 30px 0 40px;
+   margin-top: 60px;
+}
+
+
+/*demand*/
+.demand {
+    flex: 1;
+    margin: 0 auto 0px;
+    padding: 0 0 20px 0;
+}
+
+
+/*tab*/
+
+ul.tabs {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+div.tab_container {
+    clear: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/* product */
+
+.tab_container li {
+    height: 270px;
+}
+
+.tab_container li,
+.payment-method li {
+    width: calc(18% - 20px);
+}
+
+.tab_container .item .img {
+    width: 90%;
+    height: auto;
+}
+
+.tab_container .item .info .price {
+    font-size: 1.1rem;
+	padding-bottom: 0px;
+}
+
+.tab_container li .ico,
+.payment-method li .ico {
+    position: absolute;
+}
+
+div.tab_container .tab_content {
+    padding: 0px;
+    width: 100%;
+}
+
+.tab_container .item .info .name {
+    font-size: 1.15rem;
+}
+
+/*lightbox*/
+
+.lightbox {
+  padding: 3.2rem 2rem;
+  width: 60%;
+}
+
+.lightbox p {
+    font-size: 1.6rem;
+}
+
+.lightbox span.notice {
+    font-size: 1.1rem;
+}
+
+.content th {
+    padding: 10px;
+    text-align: center;
+    line-height: 160%;
+    font-weight: normal;
+    box-sizing: border-box;
+    color: #595959;
+    background-color: #ddd;
+    /* border: 1px solid #ddd; */
+}
+.content td {
+    padding: 15px 12px;
+    text-align: center;
+    line-height: 160%;
+    color: #595959;
+    box-sizing: border-box;
+    border: 0px solid #ddd;
+}		
+}
+
+
+@media screen and (max-width: 767px) {
+
+.content_login main {
+    max-width: 800px;
+}
+
+.section-guide {
+    padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+
+/*login*/
+
+.auto {
+    max-width: 500px;
+}
+.auto2 {
+    width: 96%;
+}
+
+.login .box,.product .box {
+   padding: 30px 0 40px;
+   margin-top: 60px;
+}
+
+
+/*demand*/
+.demand {
+    flex: 1;
+    margin: 0 auto 0px;
+    padding: 0 0 20px 0;
+}
+
+
+/*tab*/
+
+ul.tabs {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+div.tab_container {
+    clear: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/* product */
+
+.tab_container li {
+    height: 270px;
+}
+
+.tab_container li,
+.payment-method li {
+    width: calc(33.3% - 20px);
+    max-width: calc(33.3% - 20px);
+}
+
+.tab_container .item .info .price {
+    font-size: 1.1rem;
+	padding-bottom: 0px;
+}
+
+.tab_container li .ico,
+.payment-method li .ico {
+    position: absolute;
+}
+
+div.tab_container .tab_content {
+    padding: 0px;
+    width: 100%;
+}
+
+.tab_container .item .info .name {
+    font-size: 1.15rem;
+}
+
+/*lightbox*/
+
+.lightbox {
+  padding: 3.2rem 2rem;
+  width: 60%;
+}
+
+.lightbox p {
+    font-size: 1.6rem;
+}
+
+.lightbox span.notice {
+    font-size: 1.1rem;
+}
+
+.content th {
+    padding: 10px;
+    text-align: center;
+    line-height: 160%;
+    font-weight: normal;
+    box-sizing: border-box;
+    color: #595959;
+    background-color: #ddd;
+    /* border: 1px solid #ddd; */
+}
+.content td {
+    padding: 15px 12px;
+    text-align: center;
+    line-height: 160%;
+    color: #595959;
+    box-sizing: border-box;
+    border: 0px solid #ddd;
+}		
+}
+
+
+
+
+
+@media screen and (max-width: 540px) {
+
+.content main,
+.content_login main {
+    margin: 0px 20px;
+    width: auto;
+}
+
+.section-guide {
+    font-size: 1.3rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+/*login*/
+
+.auto2 {
+    width: 98%;
+}
+
+
+/*demand*/
+
+
+.demand-r {
+    font-size: .875rem;
+}
+
+
+/*tab*/
+
+ul.tabs {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+ul.tabs .list {
+    padding: 15px 10px;
+    font-size: 1.2rem;
+}
+
+div.tab_container {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+ul.tabs .list {
+        width: calc(20% - 10px);
+        margin: 0 5px;
+    }
+.btn_box a {
+        display: inline-block;
+        width: 100%;
+        max-width: calc(50% - 15px);
+        margin: 0 7.5px;
+}
+
+
+/* product */
+
+.tab_container li {
+    height: 250px;
+}
+
+.tab_container li,
+.payment-method li {
+    width: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    margin: 0 .5rem 2.2rem 0;
+}
+
+div.tab_container .tab_content {
+    padding: 0px;
+    width: 100%;
+}
+
+
+/*lightbox*/
+
+.lightbox {
+	padding: 4rem 2rem 2rem;
+    width: 80%;
+}
+
+.lightbox p {
+    font-size: 1.5rem;
+}
+
+.modal-list {
+  /*  height: 223px; */
+    margin-top: 20px;
+    /* padding-right: 20px; */
+    overflow-y: auto;
+    margin-left: 8px;
+	margin-bottom: 20px;
+}
+
+.modal-list li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+.modal-list .entry {
+    flex: none;
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 150px;
+}
+
+.modal-list .entry {
+    color: #999;
+	font-size: 1.3rem;
+	line-height: 150%;
+	text-align: right;
+	margin-right: 15px;
+	min-width: 100px;
+}
+
+.modal-list .price {
+    color: #eb3605;
+    font-weight: 700;
+	font-size: 1.3rem;
+	line-height: 150%;
+	min-width: 200px;
+	text-align: left;
+	font-style: normal;
+}
+
+.modal-list .name {
+    color: #000;
+    font-weight: 700;
+    font-size: 1.3rem;
+	line-height: 150%;
+	min-width: 200px;
+	text-align: left;
+}
+
+.content th {
+    padding: 10px 7px;
+}
+.content td {
+    padding: 10px;
+}
+
+.form {
+    max-width: 550px;
+}
+
+}
+
+
+@media screen and (max-width: 460px) {
+
+.content main,
+.content_login main {
+    margin: 0px 20px;
+    width: auto;
+}
+
+.section-guide {
+    font-size: 1.3rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+/*login*/
+
+.auto2 {
+    width: 98%;
+}
+
+
+/*demand*/
+
+
+.demand-r {
+    font-size: .875rem;
+}
+
+
+/*tab*/
+
+ul.tabs {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+ul.tabs .list {
+    padding: 15px 10px;
+    font-size: 1.2rem;
+}
+
+div.tab_container {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+ul.tabs .list {
+        width: calc(22% - 10px);
+        margin: 0 5px;
+    }
+.btn_box a {
+        display: inline-block;
+        width: 100%;
+        max-width: calc(50% - 15px);
+        margin: 0 7.5px;
+}
+
+
+/* product */
+
+.tab_container li {
+    height: 250px;
+}
+
+.tab_container li,
+.payment-method li {
+    float: left;
+    width: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    margin: 0 .5rem 2.2rem 0;
+}
+
+.tab_container .item .info>span {
+    margin-bottom: 0.1rem;
+    margin-top: 0.7rem;
+}
+
+.tab_container .item .info .name {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+input, input:focus, input:active {
+    user-select: text;
+    width: 80%;
+}
+
+div.tab_container .tab_content {
+    padding: 0px;
+    width: 100%;
+}
+
+
+/*lightbox*/
+
+.lightbox {
+	padding: 4rem 2rem 2rem;
+    width: 80%;
+}
+
+.lightbox p {
+    font-size: 1.5rem;
+}
+
+.modal-list {
+  /*  height: 223px; */
+    margin-top: 20px;
+    /* padding-right: 20px; */
+    overflow-y: auto;
+    margin-left: 8px;
+	margin-bottom: 20px;
+}
+
+.modal-list li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+.modal-list .entry {
+    flex: none;
+    display: inline-block;
+    vertical-align: middle;
+   /* min-width: 150px; */
+}
+
+.modal-list .entry {
+    color: #999;
+	font-size: 1.3rem;
+	line-height: 150%;
+	text-align: right;
+	margin-right: 15px;
+}
+
+.modal-list .price {
+    color: #eb3605;
+    font-weight: 700;
+	font-size: 1.3rem;
+	line-height: 150%;
+	min-width: 200px;
+	text-align: left;
+	font-style: normal;
+}
+
+.modal-list .name {
+    color: #000;
+    font-weight: 700;
+    font-size: 1.3rem;
+	line-height: 150%;
+	min-width: 200px;
+	text-align: left;
+}
+
+.content th {
+    padding: 10px 7px;
+}
+.content td {
+    padding: 10px;
+}
+}
+
+@media screen and (max-width: 390px) {
+.modal-list .entry {
+    font-size: 1.1rem;
+	min-width: 80px;
+}
+.modal-list .price {
+    font-size: 1.1rem;
+	min-width: 80px;
+}	
+.modal-list .name {
+    font-size: 1.1rem;	
+}
+}	
+
+@media screen and (max-width: 500px) {
+.navigation .nav-links .page-numbers {
+    padding: 5px 10px;
+}
+}
+
+
+
+

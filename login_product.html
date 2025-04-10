@@ -24,8 +24,31 @@
         #wrapper {
             background-image: unset;
         }
+    
         .banner_frame {
-            box-shadow:none;
+            box-shadow: none;
+        }
+    
+        ul.tabs .tab-control {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 1.3rem;
+            background: #c5c5c5;
+            border-radius: 0.625rem;
+            font-weight: 400;
+            color: #b9b9b9;
+            overflow: hidden;
+        }
+        ul.tabs .tab-control.active {
+            background: #105fea;
+            color: #fff;
+        }
+
+        ul.tabs .tab-control a {
+            display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
         }
     </style>
 </head>
@@ -54,8 +77,6 @@
             <div class="banner_frame_m"><img class="bg01" src="https://quadrantshopping.co.uk/wp-content/uploads/2017/07/1300x500-700x269.png" /><img class="bg02" src="" /><img class="bg03" src="" /><img class="bg04" src="" /><img class="bg05" src=""
                 /><img class="bg06" src="" /></div>
             <main>
-
-
                 <div class="login">
                     <div class="auto auto-1000">
                         <div class="box">
@@ -106,205 +127,222 @@
                 </div>
 
                 <div class="abgne_tab sec_tab">
-                    <ul class="tabs">
-                        <li class="list active"> <a href="#tab1" target="_blank" rel="noopener">鑽石</a> </li>
-                        <li class="list"> <a href="#tab2" target="_blank" rel="noopener">酷禮包</a> </li>
-                        <li class="list"> <a href="#tab3" target="_blank" rel="noopener">月卡</a> </li>
-				<!--	<li class="list"> <a href="#tab4" target="_blank" rel="noopener">新增</a> </li>  -->
-                    </ul>
-                    <div class="tab_container">
-                        <ul id="tab1" class="tab_content">
-                            <li class="active">
-                                <div class="item"> <i class="ico ico-hot"></i>
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">漢堡寶</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="2" data-package-item="True" data-limit-item="True">
-                                <div class="item"> <i class="ico ico-hot"></i>
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">金幣</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="3" data-package-item="True" data-limit-item="True">
-                                <div class="item"> <i class="ico ico-hot"></i>
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">11鑽石</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="4" data-package-item="True" data-limit-item="True">
-                                <div class="item"> <i class="ico ico-hot"></i>
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">130鑽石</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="5" data-package-item="True" data-limit-item="True">
-                                <div class="item">
-                                    <!--	<i class="ico ico-hot"></i> -->
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">305鑽石</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="6" data-package-item="True" data-limit-item="True">
-                                <div class="item">
-                                    <!--	<i class="ico ico-hot"></i> -->
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">750鑽石</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="7" data-package-item="True" data-limit-item="True">
-                                <div class="item">
-                                    <!--	<i class="ico ico-hot"></i> -->
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">60鑽石</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="8" data-package-item="True" data-limit-item="True">
-                                <div class="item">
-                                    <!--	<i class="ico ico-hot"></i> -->
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">1130鑽石</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
+                    <div class="tabs-main">
+                        <ul class="tabs">
+                            <li class="tab-control tab-mainItem" data-target="tab-1"><a href="">商品1</a></li>
+                            <li class="tab-control tab-mainItem" data-target="tab-2"><a href="">商品2</a></li>
+                            <li class="tab-control tab-mainItem" data-target="tab-3"><a href="">商品3</a></li>
                         </ul>
-                        <ul id="tab2" class="tab_content">
-                            <li id="productItemArea" data-productno="1" data-package-item="True" data-limit-item="True">
-                                <div class="item"> <i class="ico ico-hot"></i>
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">漢堡寶</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="2" data-package-item="True" data-limit-item="True">
-                                <div class="item"> <i class="ico ico-hot"></i>
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">金幣</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="3" data-package-item="True" data-limit-item="True">
-                                <div class="item">
-                                    <!--	<i class="ico ico-hot"></i> -->
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">11鑽石</span> <span class="price">10000.00 TWD </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="4" data-package-item="True" data-limit-item="True">
-                                <div class="item">
-                                    <!--	<i class="ico ico-hot"></i> -->
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">130鑽石</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="5" data-package-item="True" data-limit-item="True">
-                                <div class="item">
-                                    <!--	<i class="ico ico-hot"></i> -->
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">305鑽石</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="6" data-package-item="True" data-limit-item="True">
-                                <div class="item">
-                                    <!--	<i class="ico ico-hot"></i> -->
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">750鑽石</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="7" data-package-item="True" data-limit-item="True"> 
-              <div class="item">
-				<i class="ico ico-hot"></i>
-                <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">禮包</span> <span class="price">10000.00 TWD </span>
-                </div>
-              </div>
-            </li>
-			  <li id="productItemArea" data-productno="8" data-package-item="True" data-limit-item="True"> 
-              <div class="item">
-				<i class="ico ico-hot"></i>
-                <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">禮包</span> <span class="price">10000.00 TWD </span>
-                </div>
-              </div>
-            </li>
-                        </ul>
-                        <ul id="tab3" class="tab_content">
-                            <li id="productItemArea" data-productno="1" data-package-item="True" data-limit-item="True">
-                                <div class="item"> <i class="ico ico-hot"></i>
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">漢堡寶</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="2" data-package-item="True" data-limit-item="True">
-                                <div class="item"> <i class="ico ico-hot"></i>
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">金幣</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="3" data-package-item="True" data-limit-item="True">
-                                <div class="item"> <i class="ico ico-hot"></i>
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">11鑽石</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="4" data-package-item="True" data-limit-item="True">
-                                <div class="item">
-                                    <!--	<i class="ico ico-hot"></i> -->
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">130鑽石</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="5" data-package-item="True" data-limit-item="True">
-                                <div class="item">
-                                    <!--	<i class="ico ico-hot"></i> -->
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">305鑽石</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="6" data-package-item="True" data-limit-item="True">
-                                <div class="item">
-                                    <!--	<i class="ico ico-hot"></i> -->
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">750鑽石</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="7" data-package-item="True" data-limit-item="True">
-                                <div class="item">
-                                    <!--	<i class="ico ico-hot"></i> -->
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">禮包</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="8" data-package-item="True" data-limit-item="True">
-                                <div class="item">
-                                    <!--	<i class="ico ico-hot"></i> -->
-                                    <div class="info"> <span class="img"><img src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span> <span class="name">禮包</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                        </ul>
-			<!--		<ul id="tab4" class="tab_content">
-                            <li id="productItemArea" data-productno="1" data-package-item="True" data-limit-item="True">
-                                <div class="item"> <i class="ico ico-hot"></i>
-                                    <div class="info"> <span class="img"><img src="img/FreeBurger.png" alt=""></span> <span class="name">漢堡寶</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="2" data-package-item="True" data-limit-item="True">
-                                <div class="item"> <i class="ico ico-hot"></i>
-                                    <div class="info"> <span class="img"><img src="img/FreeCoin.png" alt=""></span> <span class="name">金幣</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="3" data-package-item="True" data-limit-item="True">
-                                <div class="item"> <i class="ico ico-hot"></i>
-                                    <div class="info"> <span class="img"><img src="img/Diamond-11.png" alt=""></span> <span class="name">11鑽石</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="4" data-package-item="True" data-limit-item="True">
-                                <div class="item">
-                                   	<i class="ico ico-hot"></i> 
-                                    <div class="info"> <span class="img"><img src="img/Diamond-130.png" alt=""></span> <span class="name">130鑽石</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="5" data-package-item="True" data-limit-item="True">
-                                <div class="item">
-                                    <i class="ico ico-hot"></i> 
-                                    <div class="info"> <span class="img"><img src="img/Diamond-305.png" alt=""></span> <span class="name">305鑽石</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="6" data-package-item="True" data-limit-item="True">
-                                <div class="item">
-                                    <i class="ico ico-hot"></i> 
-                                    <div class="info"> <span class="img"><img src="img/Diamond-750.png" alt=""></span> <span class="name">750鑽石</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="7" data-package-item="True" data-limit-item="True">
-                                <div class="item">
-                                    <i class="ico ico-hot"></i> 
-                                    <div class="info"> <span class="img"><img src="img/gift004.png" alt=""></span> <span class="name">禮包</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                            <li id="productItemArea" data-productno="8" data-package-item="True" data-limit-item="True">
-                                <div class="item">
-                                    <i class="ico ico-hot"></i> 
-                                    <div class="info"> <span class="img"><img src="img/gift005.png" alt=""></span> <span class="name">禮包</span> <span class="price">10000.00 TWD </span> </div>
-                                </div>
-                            </li>
-                        </ul>-->
                     </div>
+                    <div class="tab-main-container">
+                        <ul id="tab-1" class="tab-content">
+                            <ul class="tabs">
+                                <li class="list active"> <a href="#tab1" target="_blank" rel="noopener">鑽石</a> </li>
+                                <li class="list"> <a href="#tab2" target="_blank" rel="noopener">酷禮包</a> </li>
+                                <li class="list"> <a href="#tab3" target="_blank" rel="noopener">月卡</a> </li>
+                            </ul>
+                            <div class="tab_container">
+                                <ul id="tab1" class="tab_content">
+                                    <li class="active">
+                                        <div class="item"> <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">漢堡寶</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="2" data-package-item="True" data-limit-item="True">
+                                        <div class="item"> <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">金幣</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="3" data-package-item="True" data-limit-item="True">
+                                        <div class="item"> <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">11鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="4" data-package-item="True" data-limit-item="True">
+                                        <div class="item"> <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">130鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="5" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <!--	<i class="ico ico-hot"></i> -->
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">305鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="6" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <!--	<i class="ico ico-hot"></i> -->
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">750鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="7" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <!--	<i class="ico ico-hot"></i> -->
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">60鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="8" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <!--	<i class="ico ico-hot"></i> -->
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">1130鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul id="tab2" class="tab_content">
+                                    <li id="productItemArea" data-productno="1" data-package-item="True" data-limit-item="True">
+                                        <div class="item"> <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">漢堡寶</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="2" data-package-item="True" data-limit-item="True">
+                                        <div class="item"> <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">金幣</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="3" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <!--	<i class="ico ico-hot"></i> -->
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">11鑽石</span> <span class="price">10000.00 TWD </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="4" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <!--	<i class="ico ico-hot"></i> -->
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">130鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="5" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <!--	<i class="ico ico-hot"></i> -->
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">305鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="6" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <!--	<i class="ico ico-hot"></i> -->
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">750鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="7" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">禮包</span> <span class="price">10000.00 TWD </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="8" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">禮包</span> <span class="price">10000.00 TWD </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul id="tab3" class="tab_content">
+                                    <li id="productItemArea" data-productno="1" data-package-item="True" data-limit-item="True">
+                                        <div class="item"> <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">漢堡寶</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="2" data-package-item="True" data-limit-item="True">
+                                        <div class="item"> <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">金幣</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="3" data-package-item="True" data-limit-item="True">
+                                        <div class="item"> <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">11鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="4" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <!--	<i class="ico ico-hot"></i> -->
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">130鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="5" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <!--	<i class="ico ico-hot"></i> -->
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">305鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="6" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <!--	<i class="ico ico-hot"></i> -->
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">750鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="7" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <!--	<i class="ico ico-hot"></i> -->
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">禮包</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="8" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <!--	<i class="ico ico-hot"></i> -->
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">禮包</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                        <ul id="tab-2" class="tab-content">
+                            1
+                        </ul>
+                        <ul id="tab-3" class="tab-content">
+                            2
+                        </ul>
+                    </div>        
                 </div>
                 <div class="top_btn">
                     <a href="/success.html"><input type="image" class="bnt" src="https://image.mycard520.com/GangStart/img/bnt.png"></a>
@@ -335,43 +373,182 @@
     </footer>
     <!-- footer close -->
     <script>
-        $(function() {
-            // 預設顯示第一個 Tab
-            var _showTab = 0;
-            $('.abgne_tab').each(function() {
-                // 目前的頁籤區塊
-                var $tab = $(this);
+        // $(function () {
+        //     // 預設顯示第一個 Tab
+        //     var _showTab = 0;
+        //     $('.abgne_tab').each(function () {
+        //         // 目前的頁籤區塊
+        //         var $tab = $(this);
 
-                var $defaultLi = $('ul.tabs li', $tab).eq(_showTab).addClass('active');
-                $($defaultLi.find('a').attr('href')).siblings().hide();
+        //         var $defaultLi = $('ul.tabs li', $tab).eq(_showTab).addClass('active');
+        //         $($defaultLi.find('a').attr('href')).siblings().hide();
 
-                // 當 li 頁籤被點擊時...
-                // 若要改成滑鼠移到 li 頁籤就切換時, 把 click 改成 mouseover
-                $('ul.tabs li', $tab).click(function() {
-                    // 找出 li 中的超連結 href(#id)
-                    var $this = $(this),
-                        _clickTab = $this.find('a').attr('href');
-                    // 把目前點擊到的 li 頁籤加上 .active
-                    // 並把兄弟元素中有 .active 的都移除 class
-                    $this.addClass('active').siblings('.active').removeClass('active');
-                    // 淡入相對應的內容並隱藏兄弟元素
-                    $(_clickTab).stop(false, true).fadeIn().siblings().hide();
+        //         // 當 li 頁籤被點擊時...
+        //         // 若要改成滑鼠移到 li 頁籤就切換時, 把 click 改成 mouseover
+        //         $('ul.tabs li', $tab).click(function () {
+        //             // 找出 li 中的超連結 href(#id)
+        //             var $this = $(this),
+        //                 _clickTab = $this.find('a').attr('href');
+        //             // 把目前點擊到的 li 頁籤加上 .active
+        //             // 並把兄弟元素中有 .active 的都移除 class
+        //             $this.addClass('active').siblings('.active').removeClass('active');
+        //             // 淡入相對應的內容並隱藏兄弟元素
+        //             $(_clickTab).stop(false, true).fadeIn().siblings().hide();
 
-                    return false;
-                }).find('a').focus(function() {
-                    this.blur();
-                });
+        //             return false;
+        //         }).find('a').focus(function () {
+        //             this.blur();
+        //         });
+        //     });
+
+        //     $(".fakelightbox_btn").click(function () {
+        //         $(".overlay").show();
+        //         $(".lightbox").fadeIn(800);
+        //     });
+        //     $(".close_btn, .overlay").click(function () {
+        //         $(".overlay").hide();
+        //         $(".lightbox").hide();
+        //     });
+        // });
+
+        $(function () {
+            // 預設顯示 tab1
+            var _defaultTab = '#tab1';
+            $('.tab_content').hide(); // 先隱藏所有內容
+            $(_defaultTab).show(); // 顯示預設的 tab1 內容
+
+            // $('.tabs li').removeClass('active'); // 移除所有 tab 的 active 狀態
+            $('.tabs li:first').addClass('active'); // 設定第一個 tab 為 active
+
+            // 當 li 頁籤被點擊時
+            $('.tabs li').click(function (e) {
+                e.preventDefault(); // 阻止默認行為
+
+                var $this = $(this);
+                var _targetTab = $this.find('a').attr('href'); // 取得對應內容的 ID
+
+                $('.tab_content').hide(); // 隱藏所有 tab 內容
+                // $(_targetTab).fadeIn(); // 顯示對應內容
+                $(_targetTab).show; // 顯示對應內容
+
+                $this.addClass('active').siblings().removeClass('active'); // 設定 active 樣式
             });
 
-            $(".fakelightbox_btn").click(function() {
+            $(".fakelightbox_btn").click(function () {
                 $(".overlay").show();
                 $(".lightbox").fadeIn(800);
             });
-            $(".close_btn, .overlay").click(function() {
+            $(".close_btn, .overlay").click(function () {
                 $(".overlay").hide();
                 $(".lightbox").hide();
             });
         });
+
+        // $(function () {
+        //     // 取得所有 tab 選項
+        //     const tabs = document.querySelectorAll(".tab-mainitem");
+        //     // 取得所有 tab 內容區塊
+        //     const contents = document.querySelectorAll(".tab-content");
+
+        //     // 設定預設顯示的內容
+        //     function showTab(targetId) {
+        //         contents.forEach(content => {
+        //             content.style.display = content.id === targetId ? "block" : "none";
+        //         });
+        //     }
+
+        //     // 綁定點擊事件
+        //     tabs.forEach(tab => {
+        //         tab.addEventListener("click", function () {
+        //             const targetId = this.getAttribute("data-target");
+        //             showTab(targetId);
+        //         });
+        //     });
+
+        //     // 預設顯示第一個 tab
+        //     if (tabs.length > 0) {
+        //         showTab(tabs[0].getAttribute("data-target"));
+        //     }
+        // });
+
+        // $(function () {
+        //     const tabs = document.querySelectorAll(".tab-control");
+        //     const contents = document.querySelectorAll(".tab-content");
+
+        //     tabs.forEach(tab => {
+        //         tab.addEventListener("click", function (event) {
+        //             event.preventDefault();
+
+        //             // 移除所有內容的顯示
+        //             contents.forEach(content => content.style.display = "none");
+
+        //             // 取得目標內容 ID
+        //             const targetId = this.getAttribute("data-target");
+        //             const targetContent = document.getElementById(targetId);
+
+        //             // 顯示目標內容
+        //             if (targetContent) {
+        //                 targetContent.style.display = "block";
+        //             }
+        //         });
+        //     });
+
+        //     // 預設顯示第一個內容
+        //     if (contents.length > 0) {
+        //         contents.forEach(content => content.style.display = "none");
+        //         document.getElementById(tabs[0].getAttribute("data-target")).style.display = "block";
+        //     }
+        // });
+
+        $(function () {
+            const tabs = document.querySelectorAll(".tab-control");
+            const contents = document.querySelectorAll(".tab-content");
+
+            tabs.forEach(tab => {
+                tab.addEventListener("click", function (event) {
+                    event.preventDefault();
+
+                    // 移除所有內容的顯示
+                    contents.forEach(content => content.style.display = "none");
+
+                    // 取得目標內容 ID
+                    const targetId = this.getAttribute("data-target");
+                    const targetContent = document.getElementById(targetId);
+
+                    // 顯示目標內容
+                    if (targetContent) {
+                        targetContent.style.display = "block";
+
+                        // **新增**: 確保 `tab1` 內部內容預設顯示
+                        if (targetId === "tab-1") {
+                            $("#tab1").show();
+                            $('.tabs li').removeClass('active');
+                            $('.tabs li:first').addClass('active');
+                        }
+                    }
+                });
+            });
+
+            // 預設顯示第一個內容
+            if (contents.length > 0) {
+                contents.forEach(content => content.style.display = "none");
+                document.getElementById(tabs[0].getAttribute("data-target")).style.display = "block";
+            }
+
+            // **新增**: 內部 tab 切換處理
+            $('.tabs li').click(function (e) {
+                e.preventDefault();
+
+                var $this = $(this);
+                var _targetTab = $this.find('a').attr('href');
+
+                $('.tab_content').hide(); // 隱藏所有 tab 內容
+                $(_targetTab).fadeIn(); // 顯示對應內容
+
+                $this.addClass('active').siblings().removeClass('active');
+            });
+        });
+
     </script>
 </body>
 

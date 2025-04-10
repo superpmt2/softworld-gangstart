@@ -381,13 +381,16 @@
             // 隱藏所有 tab-content
             contents.hide();
 
-            // 預設顯示 tab-1 並且讓商品1的 tab-control 加上 active
+            // 預設顯示 tab-1 並讓商品1的 tab-control 加上 active
             $("#tab-1").show();
-            $(".tab-control[data-target='tab-1']").addClass("active"); // 設定「商品1」的 tab 為 active
+            $(".tab-control[data-target='tab-1']").addClass("active");
 
-            // 設定 tab-1 內部的第一個 tabs 為 active，並顯示對應內容
-            $("#tab-1 .tabs li:first").addClass("active");
+            // 隱藏所有 tab_content，僅顯示 #tab-1 內的第一個
+            $(".tab_content").hide();
             $("#tab-1 .tab_content:first").show();
+
+            // 設定 tab-1 內部的第一個 tabs 為 active
+            $("#tab-1 .tabs li:first").addClass("active");
 
             // ========== 外部 tabs 切換 (商品1、商品2) ========== //
             tabs.click(function (event) {
@@ -404,13 +407,13 @@
                 const targetId = $(this).data("target");
                 $("#" + targetId).show();
 
-                // 設定該 tab-content 內部的第一個 tabs 為 active
-                $("#" + targetId).find(".tabs li").removeClass("active");
-                $("#" + targetId).find(".tabs li:first").addClass("active");
-
-                // 顯示第一個 tab_content
+                // 隱藏該 tab-content 內所有 tab_content，僅顯示第一個
                 $("#" + targetId).find(".tab_content").hide();
                 $("#" + targetId).find(".tab_content:first").show();
+
+                // 設定該 tab-content 內的第一個 tabs 為 active
+                $("#" + targetId).find(".tabs li").removeClass("active");
+                $("#" + targetId).find(".tabs li:first").addClass("active");
             });
 
             // ========== 內部 tabs 點擊切換 (鑽石、黃金、酷禮包、月卡) ========== //
@@ -425,9 +428,9 @@
                 parentContent.find(".tabs li").removeClass("active");
                 $this.addClass("active");
 
-                // 只影響當前 tab-content 內的 tab_content，不影響其他內容
+                // 隱藏當前 tab-content 內所有 tab_content，只顯示選中的
                 parentContent.find(".tab_content").hide();
-                $(_targetTab).fadeIn();
+                $(_targetTab).show(); // **修正 .show() 錯誤**
             });
 
             // ========== 燈箱效果 ========== //
@@ -441,7 +444,6 @@
                 $(".lightbox").hide();
             });
         });
-
     </script>
 </body>
 

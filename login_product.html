@@ -25,7 +25,7 @@
             background-image: unset;
         }
     
-        .banner_frame {
+        .banner_frame, .banner_frame_m {
             box-shadow: none;
         }
     
@@ -39,16 +39,21 @@
             color: #b9b9b9;
             overflow: hidden;
         }
+    
         ul.tabs .tab-control.active {
             background: #105fea;
             color: #fff;
         }
-
+    
         ul.tabs .tab-control a {
             display: block;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+        }
+    
+        .tab_container li {
+            max-width: none;
         }
     </style>
 </head>
@@ -337,10 +342,129 @@
                             </div>
                         </ul>
                         <ul id="tab-2" class="tab-content">
-                            1
+                            <ul class="tabs">
+                                <li class="list active"> <a href="#tab1" target="_blank" rel="noopener">鑽石</a> </li>
+                                <li class="list"> <a href="#tab2" target="_blank" rel="noopener">酷禮包</a> </li>
+                                <li class="list"> <a href="#tab3" target="_blank" rel="noopener">月卡</a> </li>
+                            </ul>
+                            <div class="tab_container">
+                                <ul id="tab1" class="tab_content">
+                                    <li class="active">
+                                        <div class="item"> <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">漢堡寶</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="2" data-package-item="True" data-limit-item="True">
+                                        <div class="item"> <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">金幣</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="3" data-package-item="True" data-limit-item="True">
+                                        <div class="item"> <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">11鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="3" data-package-item="True" data-limit-item="True">
+                                        <div class="item"> <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">11鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul id="tab2" class="tab_content">
+                                    <li id="productItemArea" data-productno="4" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <!--	<i class="ico ico-hot"></i> -->
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">130鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="5" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <!--	<i class="ico ico-hot"></i> -->
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">305鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul id="tab3" class="tab_content">
+                                    <li id="productItemArea" data-productno="1" data-package-item="True" data-limit-item="True">
+                                        <div class="item"> <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">漢堡寶</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </ul>
                         <ul id="tab-3" class="tab-content">
-                            2
+                            <ul class="tabs">
+                                <li class="list active"> <a href="#tab1" target="_blank" rel="noopener">鑽石</a> </li>
+                                <li class="list"> <a href="#tab2" target="_blank" rel="noopener">酷禮包</a> </li>
+                                <li class="list"> <a href="#tab3" target="_blank" rel="noopener">月卡</a> </li>
+                            </ul>
+                            <div class="tab_container">
+                                <ul id="tab1" class="tab_content">
+                                    <li class="active">
+                                        <div class="item"> <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">漢堡寶</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="3" data-package-item="True" data-limit-item="True">
+                                        <div class="item"> <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">11鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="3" data-package-item="True" data-limit-item="True">
+                                        <div class="item"> <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">11鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul id="tab2" class="tab_content">
+                                    <li id="productItemArea" data-productno="4" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <!--	<i class="ico ico-hot"></i> -->
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">130鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                    <li id="productItemArea" data-productno="5" data-package-item="True" data-limit-item="True">
+                                        <div class="item">
+                                            <!--	<i class="ico ico-hot"></i> -->
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">305鑽石</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul id="tab3" class="tab_content">
+                                    <li id="productItemArea" data-productno="1" data-package-item="True" data-limit-item="True">
+                                        <div class="item"> <i class="ico ico-hot"></i>
+                                            <div class="info"> <span class="img"><img
+                                                        src="https://provengraphics.com/wp-content/uploads/2018/02/300x300.png" alt=""></span>
+                                                <span class="name">漢堡寶</span> <span class="price">10000.00 TWD </span> </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </ul>
                     </div>        
                 </div>
@@ -374,76 +498,84 @@
     <!-- footer close -->
     <script>
         $(function () {
-            // ========== 設定 tabs 預設顯示 ========== //
-            const contents = $(".tab-content");
-            const tabs = $(".tab-control");
+    // ========== 設定 tabs 預設顯示 ========== //
+    const contents = $(".tab-content");
+    const tabs = $(".tab-control");
 
-            // 隱藏所有 tab-content
-            contents.hide();
+    // 隱藏所有 tab-content
+    contents.hide();
 
-            // 預設顯示 tab-1 並讓商品1的 tab-control 加上 active
-            $("#tab-1").show();
-            $(".tab-control[data-target='tab-1']").addClass("active");
+    // 預設顯示商品1的 tab-control 為 active
+    $(".tab-control[data-target='tab-1']").addClass("active");
 
-            // 隱藏所有 tab_content，僅顯示 #tab-1 內的第一個
-            $(".tab_content").hide();
-            $("#tab-1 .tab_content:first").show();
+    // 預設顯示商品1的內容
+    $("#tab-1").show();
 
-            // 設定 tab-1 內部的第一個 tabs 為 active
-            $("#tab-1 .tabs li:first").addClass("active");
+    // 隱藏所有 tab_content，僅顯示 #tab-1 內的第一個
+    $(".tab_content").hide();
+    $("#tab-1 .tab_content:first").show();
 
-            // ========== 外部 tabs 切換 (商品1、商品2) ========== //
-            tabs.click(function (event) {
-                event.preventDefault();
+    // 設定 #tab-1 內部的第一個 tabs 為 active
+    $("#tab-1 .tabs li:first").addClass("active");
 
-                // 先移除所有 tab-control 的 active 樣式，然後再加到點擊的 tab-control
-                tabs.removeClass("active");
-                $(this).addClass("active");
+    // ========== 外部 tabs 切換 (商品1、商品2) ========== //
+    tabs.click(function (event) {
+        event.preventDefault();
 
-                // 隱藏所有 tab-content
-                contents.hide();
+        // 先移除所有 tab-control 的 active 樣式，然後再加到點擊的 tab-control
+        tabs.removeClass("active");
+        $(this).addClass("active");
 
-                // 取得目標內容 ID 並顯示
-                const targetId = $(this).data("target");
-                $("#" + targetId).show();
+        // 隱藏所有 tab-content
+        contents.hide();
 
-                // 隱藏該 tab-content 內所有 tab_content，僅顯示第一個
-                $("#" + targetId).find(".tab_content").hide();
-                $("#" + targetId).find(".tab_content:first").show();
+        // 取得目標內容 ID 並顯示
+        const targetId = $(this).data("target");
+        $("#" + targetId).show();
 
-                // 設定該 tab-content 內的第一個 tabs 為 active
-                $("#" + targetId).find(".tabs li").removeClass("active");
-                $("#" + targetId).find(".tabs li:first").addClass("active");
-            });
+        // 隱藏該 tab-content 內所有 tab_content，僅顯示第一個
+        $("#" + targetId).find(".tab_content").hide();
+        $("#" + targetId).find(".tab_content:first").show();
 
-            // ========== 內部 tabs 點擊切換 (鑽石、黃金、酷禮包、月卡) ========== //
-            $(".tabs li").click(function (e) {
-                e.preventDefault();
+        // 設定該 tab-content 內的第一個 tabs 為 active
+        $("#" + targetId).find(".tabs li").removeClass("active");
+        $("#" + targetId).find(".tabs li:first").addClass("active");
+    });
 
-                var $this = $(this);
-                var _targetTab = $this.find('a').attr('href'); // 取得目標內容的 ID
-                var parentContent = $this.closest(".tab-content"); // 找到父級 tab-content
+    // ========== 內部 tabs 點擊切換 (鑽石、黃金、酷禮包、月卡) ========== //
+    $(".tabs li a").click(function (e) {
+        e.preventDefault();
 
-                // 切換 active 樣式
-                parentContent.find(".tabs li").removeClass("active");
-                $this.addClass("active");
+        var $this = $(this).parent(); // 找到被點擊的 <li>
+        var _targetTab = $(this).attr('href'); // 取得對應的 tab_content ID
+        var parentContent = $this.closest(".tab-content"); // 找到父級 tab-content
 
-                // 隱藏當前 tab-content 內所有 tab_content，只顯示選中的
-                parentContent.find(".tab_content").hide();
-                $(_targetTab).show(); // **修正 .show() 錯誤**
-            });
+        // 檢查 _targetTab 是否有效，防止錯誤
+        if (!_targetTab || $(_targetTab).length === 0) {
+            console.error("找不到對應的 tab_content:", _targetTab);
+            return;
+        }
 
-            // ========== 燈箱效果 ========== //
-            $(".fakelightbox_btn").click(function () {
-                $(".overlay").show();
-                $(".lightbox").fadeIn(800);
-            });
+        // 切換 active 樣式
+        parentContent.find(".tabs li").removeClass("active");
+        $this.addClass("active");
 
-            $(".close_btn, .overlay").click(function () {
-                $(".overlay").hide();
-                $(".lightbox").hide();
-            });
-        });
+        // **修正點：確保只隱藏當前 tab-content 內的 tab_content，不影響其他內容**
+        parentContent.find(".tab_content").hide();
+        parentContent.find(_targetTab).fadeIn();
+    });
+
+    // ========== 燈箱效果 ========== //
+    $(".fakelightbox_btn").click(function () {
+        $(".overlay").show();
+        $(".lightbox").fadeIn(800);
+    });
+
+    $(".close_btn, .overlay").click(function () {
+        $(".overlay").hide();
+        $(".lightbox").hide();
+    });
+});
     </script>
 </body>
 
